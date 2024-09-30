@@ -1,0 +1,107 @@
+/* Styling untuk halaman secara keseluruhan */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bcg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container untuk form login */
+.login-container {
+    background-color: rgba(80, 106, 163, 0.047); /* Warna putih transparan */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+    animation: light 3s infinite alternate;
+}
+
+/* Styling untuk form login */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f8f3f3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f4f2f2;
+    border-radius: 5px;
+    background-color: rgba(27, 4, 112, 0.217); /* Background transparan */
+}
+
+/* Tombol Login */
+button {
+    background-color: orange;
+    color: rgb(235, 236, 237);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:chocolate;
+    animation: btn-anim4 0.7s ease infinite;
+}
+
+.glowing-button {
+    box-shadow: 0 0 10px rgba(1, 0, 9, 0.7), 0 0 20px rgba(71, 2, 234, 0.937);
+    transition: box-shadow 0.3s ease;
+}
+
+.glowing-button:hover {
+    box-shadow: 0 0 20px rgba(12, 0, 0, 0.9), 0 0 30px rgba(6, 200, 249, 0.937);
+}
+
+/* Animasi tombol */
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+/* Keyframes untuk efek light */
+@keyframes light {
+    0% {
+        box-shadow: 0 0 10px rgba(1, 0, 9, 0.7), 0 0 20px rgba(2, 203, 234, 0.937);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(12, 0, 0, 0.9), 0 0 30px rgba(6, 180, 249, 0.937);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(1, 4, 33, 0.7), 0 0 20px rgba(6, 225, 249, 0.937);
+    }
+}
